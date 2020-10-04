@@ -1,0 +1,66 @@
+body {background-color: lightcoral;
+    text-align: center;
+    font-size: 200%;
+
+}
+
+.VÝHRA {
+    color: lime;
+    font-size: 250%;
+
+}
+
+.PROHRA {
+    color: red;
+
+}
+
+.REMÍZA {
+    color: yellow;
+
+}
+
+.kamen{
+    color: brown;
+
+}
+
+.nuzky{
+    color: blue;
+}
+
+.papir{
+    color: white;
+}
+
+.ramecek1{
+
+  width: 25%;
+  text-align: center;
+  border-style: solid;
+  background-color: lightgray;
+
+}
+
+.ramecek2{
+
+  width: 25%;
+
+  border-width: 30%;
+  border-style: solid;
+  background-color: rgb(255, 204, 255);
+
+}
+
+.hrac{
+    color: blue;
+}
+
+.pocitac{
+    color: rgb(255, 0, 102);
+}
+
+.upo{
+    font-size: 50%;
+
+}
