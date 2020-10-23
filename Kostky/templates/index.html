@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style> .center {
+
+  border: 5px solid green;
+  padding: 0px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+
+    top: 60%;
+    left: 47.5%;
+}
+</style>
+
+<title>Kostky</title>
+<meta charset="utf-8">
+</head>
+
+<body bgcolor="#91f8ff">
+    <font size="8">Kostky!</font><img src="/static/img/kostky.png" width = "130px" align="top">
+    <center><font size="6"><h3>Hodil jsi:</h3></font></center>
+
+    <center><img src= /static/img/kostka{{ hod }}.png class="center"></img></center>
+    <p></p>
+    <div class="wrapper">
+<button class="button" onClick="window.location.reload();">Hoď znova</button>
+</div>
+   <center><font size="6"><h3>Počítač hodil:</h3></font></center>
+
+    <center><img src= /static/img/kostka{{ hodpc }}.png class="center"></img></center>
+    <font size="5">
+    <p>Score pc: {{ score_b }}</p>
+    <p>Score: {{ score_a }}</p>
+    </font>
+<center><div>
+    {% if hodpc > hod %}
+    <p style="font-size:30px"> Prohrál jsi.</p>
+
+    {% elif hodpc == hod %}
+    <p style="font-size:30px"> Remíza.</p>
+
+    {% else %}
+    <p style="font-size:30px"> Vyhrál jsi!</p>
+    {% endif %}
+
+</div>
+</center>
+</body>
+</html
